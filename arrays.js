@@ -1,6 +1,19 @@
-let users = [ "Ramya" , "SaiSmitha" , "Sai Nikhil" , "Rahul" , "Prabhas" , "NTR"];
-let x = users.forEach((user)=>{
-    return user;
+// let users = [ "Ramya" , "SaiSmitha" , "Sai Nikhil" , "Rahul" , "Prabhas" , "NTR"];
+// let x = users.forEach((user)=>{
+//     return user;
 
-});
-console.log(x);
+// });
+// console.log(x);
+
+let userDetails={
+    name:"ram",
+    age:25,
+    city:"hyd"
+
+};
+console.log(userDetails);
+let x=JSON.stringify(userDetails);
+console.log("JSON object "+x);
+let y=JSON.parse(x);
+console.log(y);
+
