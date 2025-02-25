@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            gap:20px;
+            flex-basis: 30%;
+        }
+        .common{
+            height: 200px;
+            width: 200px;
+            border: 1px solid rgb(142, 219, 171);
+        }
+        .c1{
+            background-color: rgb(220, 163, 207);
+            /* order: 1; */
+        }
+        .c2{
+            background-color: rgb(168, 168, 239);
+        }
+        .c3{
+            background-color: rgb(122, 136, 122);
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <section class="parent">
+        <section class="common c1">first</section>
+        <section class="common c2">second</section>
+        <section class="common c3">third</section>
+    </section>
+</body>
+</html>
